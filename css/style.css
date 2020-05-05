@@ -1,0 +1,21 @@
+/** Base Styles **/
+:root {
+    --body-background-color:  hsl(230, 17%, 14%);
+    --card-background-color: hsl(228, 28%, 20%);
+    --link-color: hsl(228, 45%, 44%);
+    --link-color-dark: #190070;
+    --text-color-white: hsl(0, 0%, 100%);
+    --text-color-blue: hsl(228, 34%, 66%);
+}
+
+html {
+    font-size: 125%;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--body-background-color);
+    padding: 3em;
+}
