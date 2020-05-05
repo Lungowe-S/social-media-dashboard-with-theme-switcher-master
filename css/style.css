@@ -19,3 +19,31 @@ body {
     background-color: var(--body-background-color);
     padding: 3em;
 }
+
+/** Main Container **/
+
+.main-container {
+    max-width: 52.5em;
+    margin: auto;
+}
+
+/** Header **/
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+}
+
+h1 {
+    font-size: 1.5em;
+    color: var(--text-color-white);
+}
+
+.header p,
+.theme {
+    font-size: 0.7em;
+    font-weight: 700;
+    color: var(--text-color-blue);
+}
