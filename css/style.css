@@ -41,6 +41,11 @@ h1 {
     color: var(--text-color-white);
 }
 
+h2 {
+    font-size: 1.3em;
+    color: var(--text-color-white);
+}
+
 .header p,
 .theme {
     font-size: 0.7em;
@@ -126,9 +131,11 @@ h1 {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
     text-align: center;
+    padding-bottom: 3em;
 }
 
-.main-dashboard {
+.main-dashboard,
+.sub-dashboard {
     background: var(--card-background-color);
 }
 
@@ -145,12 +152,60 @@ h1 {
 
 .social-media-handle span {
     padding-left: 0.35em;
+    font-size: 0.75em;
+    color: var(--text-color-blue);
+    font-weight: bold;
 }
 
 .social-media-numbers {
-    padding-top: 1em;
+    padding-top: 0.4em;
+    font-size: 2.5em;
+    color: var(--text-color-white);
+    font-weight: bold;
+}
+
+.subs-and-followers {
+    text-transform: uppercase;
+    color: var(--text-color-blue);
+    letter-spacing: 0.15em;
+    font-size: 0.75em;
 }
 
 .social-media-stats {
-    padding: 1em 0;
+    padding: 1.2em 0;
+}
+
+.social-media-stats span {
+    padding-left: 0.3em;
+    font-size: 0.6em;
+    font-weight: bold;
+}
+
+.stats-up {
+    color: hsl(163, 72%, 41%);
+}
+
+.stats-down {
+    color: hsl(356, 69%, 56%);
+}
+
+/** Second Dashboard Section **/
+
+.bottom-dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    padding-top: 1em;
+}
+
+.sub-dashboard {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1em;
+    align-items: center;
+}
+
+.icon,
+.social-stats {
+    justify-self: end;
 }
