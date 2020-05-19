@@ -8,6 +8,22 @@
     --text-color-blue: hsl(228, 34%, 66%);
 }
 
+[data-theme="facebook"] {
+    --border-top-color: hsl(195, 100%, 50%);
+}
+
+[data-theme="twitter"] {
+    --border-top-color: hsl(203, 89%, 53%);
+}
+
+[data-theme="instagram"] {
+    --border-top-color-insta: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+[data-theme="youtube"] {
+    --border-top-color: hsl(348, 97%, 39%);
+}
+
 html {
     font-size: 125%;
     font-family: 'Inter', sans-serif;
@@ -139,8 +155,13 @@ h2 {
     background: var(--card-background-color);
 }
 
+.main-dashboard {
+    border-top: 0.25em solid var(--border-top-color);
+}
+
 .social-media-handle,
-.social-media-stats {
+.social-media-stats,
+.social-stats {
     display: flex;
     align-items: center;
     justify-content: center;
