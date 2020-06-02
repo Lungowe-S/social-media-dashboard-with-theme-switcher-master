@@ -324,6 +324,10 @@ body.is-selected h1{
     color: hsl(230, 17%, 14%);
 }
 
+body.is-selected h2 {
+    color: var(--text-color-blue);
+}
+
 body.is-selected .main-dashboard,
 body.is-selected .sub-dashboard {
     background-color: hsl(227, 47%, 96%);
@@ -356,10 +360,9 @@ body.is-selected [data-theme="instagram"]:hover {
     background-origin: padding-box, border-box;  
 }
 
-body.is-selected .social-media-numbers {
-    color: hsl(230, 17%, 14%);
-}
-
+body.is-selected .social-media-numbers, 
 body.is-selected .sub-dashboard p:nth-of-type(2) {
     color: hsl(230, 17%, 14%);
 }
+
+ 
