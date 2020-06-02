@@ -316,7 +316,7 @@ body.is-selected .slider {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: linear-gradient(to right, hsl(0, 0%, 60%), hsl(0, 0%, 60%)); 
+    background-image: linear-gradient(to right, hsl(0, 0%, 75%), hsl(0, 0%, 75%)); 
     transition: .4s;
 }
 
