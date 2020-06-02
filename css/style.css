@@ -329,14 +329,6 @@ body.is-selected .sub-dashboard {
     background-color: hsl(227, 47%, 96%);
 }
 
-body.is-selected .social-media-numbers {
-    color: hsl(230, 17%, 14%);
-}
-
-body.is-selected .sub-dashboard p:nth-of-type(2) {
-    color: hsl(230, 17%, 14%);
-}
-
 body.is-selected .main-dashboard:hover,
 body.is-selected .sub-dashboard:hover {
     background-color: hsl(231, 53%, 90%);
@@ -362,4 +354,12 @@ body.is-selected [data-theme="instagram"]:hover {
       linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;  
+}
+
+body.is-selected .social-media-numbers {
+    color: hsl(230, 17%, 14%);
+}
+
+body.is-selected .sub-dashboard p:nth-of-type(2) {
+    color: hsl(230, 17%, 14%);
 }
