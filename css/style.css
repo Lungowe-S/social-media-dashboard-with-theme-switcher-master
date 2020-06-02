@@ -16,10 +16,6 @@
     --border-top-color: hsl(203, 89%, 53%);
 }
 
-/* [data-theme="instagram"] {
-    --border-top-color-insta: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-} */
-
 [data-theme="youtube"] {
     --border-top-color: hsl(348, 97%, 39%);
 }
@@ -157,14 +153,29 @@ h2 {
 
 .main-dashboard {
     border-top: 0.25em solid var(--border-top-color);
+    border-radius: 5px;
 }
 
 [data-theme="instagram"] {
-    border-top: 0.25em solid;
+    border-top: 0.25em solid transparent;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border-image-source: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    border-image-slice: 1;
+    background: 
+        linear-gradient(to right, hsl(228, 28%, 20%), hsl(228, 28%, 20%)),
+        linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+[data-theme="instagram"]:hover {
+    border-top: 0.25em solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:
+      linear-gradient(hsl(231, 27%, 25%), hsl(231, 27%, 25%)),
+      linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;  
 }
 
 .social-media-handle,
@@ -271,16 +282,84 @@ h2 {
 /** Footer **/
 
 .attribution {
-    font-size: 0.55em;
+    font-size: 0.8em;
     text-align: center;
-    padding-top: 3em;
+    padding-top: 5em;
+    color: hsl(0, 90%, 0%);
+    font-weight: 600;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
     font-weight: 700;
+    text-decoration: none;
 }
 
 .attribution a:hover {
-    color: var(--text-color-white);
+    color: hsl(0, 0%, 90%);
+}
+
+.attribution a:active {
+    color: hsl(0, 0%, 60%);
+}
+
+/** Light Mode Styles **/
+
+body.is-selected {
+    background-color: hsl(0, 0%, 100%);
+}
+
+body.is-selected .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, hsl(0, 0%, 60%), hsl(0, 0%, 60%)); 
+    transition: .4s;
+}
+
+body.is-selected h1{
+    color: hsl(230, 17%, 14%);
+}
+
+body.is-selected .main-dashboard,
+body.is-selected .sub-dashboard {
+    background-color: hsl(227, 47%, 96%);
+}
+
+body.is-selected .social-media-numbers {
+    color: hsl(230, 17%, 14%);
+}
+
+body.is-selected .sub-dashboard p:nth-of-type(2) {
+    color: hsl(230, 17%, 14%);
+}
+
+body.is-selected .main-dashboard:hover,
+body.is-selected .sub-dashboard:hover {
+    background-color: hsl(231, 53%, 90%);
+}
+
+body.is-selected [data-theme="instagram"] {
+    border-top: 0.25em solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background: 
+        linear-gradient(to right, hsl(227, 47%, 96%), hsl(227, 47%, 96%)),
+        linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+body.is-selected [data-theme="instagram"]:hover {
+    border-top: 0.25em solid transparent;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background:
+      linear-gradient(hsl(231, 53%, 90%), hsl(231, 53%, 90%)),
+      linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;  
 }
