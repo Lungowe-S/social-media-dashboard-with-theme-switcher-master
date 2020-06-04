@@ -1,4 +1,6 @@
-/** Base Styles **/
+/** 
+ * BASE STYLES *
+ **/
 :root {
     --body-background-color:  hsl(230, 17%, 14%);
     --card-background-color: hsl(228, 28%, 20%);
@@ -32,14 +34,18 @@ body {
     padding: 3em;
 }
 
-/*** Main Container ***/
+/**
+ * MAIN CONTAINER *
+ **/
 
 .main-container {
     max-width: 52.5em;
     margin: auto;
 }
 
-/*** Header ***/
+/**
+ * HEADER *
+ **/
 
 .main-header {
     display: flex;
@@ -136,11 +142,13 @@ h2 {
  }
 
 
-/*** First Dashboard Section ***/
+/** 
+ * TOP DASHBOARD SECTION *
+ **/
 
 .top-dashboard {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(247.5px, 1fr));
     grid-gap: 1em;
     text-align: center;
     padding-bottom: 3em;
@@ -229,11 +237,13 @@ h2 {
     color: hsl(356, 69%, 56%);
 }
 
-/** Second Dashboard Section **/
+/** 
+ * BOTTOM DASHBOARD SECTION *
+ **/
 
 .bottom-dashboard {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(247.5px, 1fr));
     grid-gap: 1em;
     padding-top: 1em;
 }
@@ -279,7 +289,9 @@ h2 {
     font-weight: bold;
 }
 
-/** Footer **/
+/** 
+ * FOOTER *
+ **/
 
 .attribution {
     font-size: 0.8em;
@@ -303,7 +315,9 @@ h2 {
     color: hsl(0, 0%, 60%);
 }
 
-/** Light Mode Styles **/
+/** 
+ * LIGHT MODE STYLES *
+ **/
 
 body.is-selected {
     background-color: hsl(0, 0%, 100%);
@@ -365,16 +379,16 @@ body.is-selected .sub-dashboard p:nth-of-type(2) {
     color: hsl(230, 17%, 14%);
 }
 
- /** Media Queries **/
+ /** 
+  * MEDIA QUERIES * 
+  **/
 
-/** Mobile Devices Styles**/
- @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 700px) {
     body {
         padding: 1em;
     }
 
     .main-header {
-        flex-direction: column;
         flex-wrap: wrap;
     }
 
@@ -395,45 +409,7 @@ body.is-selected .sub-dashboard p:nth-of-type(2) {
          width: 100%;
      }
 
-     .top-dashboard {
-         grid-template-columns: 1fr;
+     .attribution {
+         font-size: 0.5em;
      }
-
-     .bottom-dashboard {
-         grid-template-columns: 1fr;
-     }
- }
-
- /** Tablet Styles **/
- @media only screen and (max-width: 600px) and (min-width: 376px) {
-    .main-header {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-    
-    .header {
-        align-self: flex-start;
-        padding-bottom: 1.2em;
-        width: 100%;
-        border-bottom: 1px solid gray;
-    }
-    
-    h1 {
-        font-size: 1.5em;
-    }
-    
-    .toggle-theme {
-        justify-content: space-between;
-        padding-top: 1em;
-        width: 100%;
-    }
-    
-    .top-dashboard {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .bottom-dashboard {
-        grid-template-columns: repeat(2, 1fr);
-    }
- }
- 
+ } 
