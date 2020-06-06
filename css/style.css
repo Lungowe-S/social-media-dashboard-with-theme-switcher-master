@@ -31,7 +31,7 @@ html {
 
 body {
     background-color: var(--body-background-color);
-    padding: 3em;
+    padding: 2em;
 }
 
 /**
@@ -148,8 +148,8 @@ h2 {
 
 .top-dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(247.5px, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 1.2em;
     text-align: center;
     padding-bottom: 3em;
 }
@@ -195,7 +195,7 @@ h2 {
 }
 
 .social-media-handle {
-    padding-top: 2em;
+    padding-top: 1.5em;
 }
 
 .social-media-handle span {
@@ -215,8 +215,10 @@ h2 {
 .subs-and-followers {
     text-transform: uppercase;
     color: var(--text-color-blue);
-    letter-spacing: 0.15em;
+    letter-spacing: 0.2em;
     font-size: 0.75em;
+    position: relative;
+    top: -0.3em;
 }
 
 .social-media-stats {
@@ -243,8 +245,8 @@ h2 {
 
 .bottom-dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(247.5px, 1fr));
-    grid-gap: 1em;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-gap: 1.2em;
     padding-top: 1em;
 }
 
